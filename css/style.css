@@ -9,7 +9,7 @@ body{
     background-image: url(../photos/galaxy.png);
     background-repeat: no-repeat;
     background-size: cover;
-
+    overflow: hidden;
 }
 
 .sun img{
@@ -31,12 +31,122 @@ body{
     top: 42.4%;
     left: 46.2%;
     transform: translate(-50%,-50%);
-    animation: mercury 5s linear infinite;
+    animation: spin 5s linear infinite;
 }
 .mercury img{
     width: 25%;
 }
-@keyframes mercury {
+.venus{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    top: 38.4%;
+    left: 44.4%;
+    transform: translate(-50%,-50%);
+    animation: spin 10s linear infinite;
+}
+.venus img{
+    width: 25%;
+}
+.earth{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    top: 34.3%;
+    left: 42.55%;
+    transform: translate(-50%,-50%);
+    animation: spin 15s linear infinite;
+}
+.earth img{
+    width: 20%;
+    position: absolute;
+    top: 70%;
+}
+.mars{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    top: 30.4%;
+    left: 40.55%;
+    transform: translate(-50%,-50%);
+    animation: spin 20s linear infinite;
+}
+.mars img{
+    width: 15%;
+    position: absolute;
+    top: 70%;
+}
+.jupiter{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 28rem;
+    height: 28rem;
+    top: 23.4%;
+    left: 37.55%;
+    transform: translate(-50%,-50%);
+    animation: spin 25s linear infinite;
+}
+.jupiter img{
+    width: 25%;
+}
+.saturn{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 45rem;
+    height: 45rem;
+    top: 9.4%;
+    left: 29.55%;
+    transform: translate(-50%,-50%);
+    animation: spin 30s linear infinite;
+}
+.saturn img{
+    width: 25%;
+}
+.falling-star{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    animation: fall 3s linear infinite;
+}
+.falling-star-2{
+    position: absolute;
+    transform: rotate(5deg);
+    bottom: 0;
+    right: -10%;
+    animation: fall-2 10s linear infinite;
+}
+.falling-star-2 img{
+    width: 40%;
+}
+@keyframes fall-2 {
+    from{
+        bottom: 0%;
+        right: -10%;
+    }
+    to{
+        bottom:110%;
+        right: 110%
+    }
+}
+@keyframes fall {
+    from{
+        top: 0%;
+        left: 50%;
+    }
+    to{
+        top:30%;
+        left: 0;
+    }
+}
+@keyframes spin {
     from{
        
        transform: rotate(0);
