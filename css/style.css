@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    background-image: url(../photos/galaxy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.sun img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    
+}
+.mercury{
+    border: 2px solid white;
+    border-radius: 100%;
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    top: 42.4%;
+    left: 46.2%;
+    transform: translate(-50%,-50%);
+    animation: mercury 5s linear infinite;
+}
+.mercury img{
+    width: 25%;
+}
+@keyframes mercury {
+    from{
+       
+       transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
